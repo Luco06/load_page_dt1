@@ -4,8 +4,10 @@ body{
         width: 80%;
         height: 300px;
         margin: auto;
-        .anime{
+        #anime{
             width: 100%;
+            display: block;
+            position: relative;
             img{
                 display: block;
                 height: 256px;
@@ -14,6 +16,36 @@ body{
                margin-right:auto;
                padding-top:25%;
             }
+            #tear {
+                width: 20px;
+                height: 20px;
+                border-radius: 0 50% 50% 50%;
+                border: .5px solid black;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 37%;
+                left: 42%;
+                background-color: #850606;
+                visibility: hidden;
+                /*animation: fall;
+                animation-duration: 3s;
+                @keyframes fall {
+                    20%{
+                        visibility: visible;
+                    }
+                    50%{
+                        transform: translateY(0px);
+                    }
+                    90%{
+                        transform: translateY(235px);
+                    }
+                    100%{
+                        visibility: hidden;
+                    }
+                    
+                }*/
+                
+            } 
         }
     }
 }
