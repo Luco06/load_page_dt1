@@ -26,26 +26,49 @@ body{
                 top: 37%;
                 left: 42%;
                 background-color: #850606;
-                visibility: hidden;
-                /*animation: fall;
-                animation-duration: 3s;
-                @keyframes fall {
-                    20%{
-                        visibility: visible;
-                    }
-                    50%{
-                        transform: translateY(0px);
-                    }
-                    90%{
-                        transform: translateY(235px);
-                    }
-                    100%{
-                        visibility: hidden;
-                    }
-                    
-                }*/
-                
+                visibility: hidden;  
             } 
+            #box{
+                visibility: hidden;
+                height: 350px;
+                width: 250px;
+                position: absolute;
+                top:40%;
+                left:25%;
+                svg{
+                    height: 120px;
+                    width: 120px;
+                    position: relative;
+                    left: 50%;
+                    top:50%;
+                    transform: translate(-50%, -50%);
+                    circle{
+                        fill: transparent;
+                        stroke: green;
+                        stroke-width: 10;
+                        stroke-linecap: round;
+                        stroke-dasharray: 500;
+                        stroke-dashoffset: 500;
+                        animation-name: animate ;
+                        animation-duration: 8s;
+                        animation-delay: 1s;
+                        animation-fill-mode: forwards;
+                        @keyframes animate {
+                            100%{
+                              stroke-dashoffset: 0;
+                            }
+                        }
+                    }
+                }
+                .counter{
+                    position: absolute;
+                    left: 50%;
+                    top:50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+            }
         }
     }
 }
