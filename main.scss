@@ -1,0 +1,19 @@
+body{
+    background-color: wheat;
+    .container{
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        .anime{
+            width: 100%;
+            img{
+                display: block;
+                height: 256px;
+               cursor: pointer;
+               margin-left:auto;
+               margin-right:auto;
+               padding-top:25%;
+            }
+        }
+    }
+}
